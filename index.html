@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/Logo.png" alt="Logo alura">
+        </div>
+    </header>
+    <main class="encriptador">
+        <section class="encriptador__seccion">
+            <div class="encriptador__seccion__contenedor__uno">
+                <textarea id="texto" class="encriptador__seccion__contenedor__uno__campo" placeholder="Ingrese el texto"></textarea>
+                <p class="encriptador__seccion__contenedor__uno__texto">
+                    <i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos
+                </p>
+                <div class="buttons">
+                    <button class="encriptador__seccion__contenedor__uno__encriptar" onclick="encriptarTexto();">Encriptar</button>
+                    <button class="encriptador__seccion__contenedor__uno__desencriptar" onclick="desencriptarTexto();">Desencriptar</button>
+                </div>
+            </div>
+            <div class="encriptador__seccion__contenedor__dos" id="resultado">
+                <img class="image" src="./assets/Muñeco.png" alt="imagen con fines educativos">
+                <h2 class="encriptador__seccion__contenedor__dos__subtitulo">Ningún mensaje fue encontrado</h2>
+                <p class="encriptador__seccion__contenedor__dos__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        Hecho por Mike Mitchel B.
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
